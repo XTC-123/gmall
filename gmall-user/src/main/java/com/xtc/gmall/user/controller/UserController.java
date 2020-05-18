@@ -1,10 +1,11 @@
-package com.xtc.gmall.controller;
+package com.xtc.gmall.user.controller;
 
 import com.xtc.gmall.bean.UmsMember;
 import com.xtc.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 
 import java.util.List;
 

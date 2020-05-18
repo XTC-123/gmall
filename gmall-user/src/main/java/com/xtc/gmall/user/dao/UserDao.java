@@ -1,4 +1,4 @@
-package com.xtc.gmall.dao;
+package com.xtc.gmall.user.dao;
 
 import com.xtc.gmall.bean.UmsMember;
 import org.apache.ibatis.annotations.Mapper;
