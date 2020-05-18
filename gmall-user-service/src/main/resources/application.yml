@@ -1,0 +1,42 @@
+server:
+  # 服务端口号
+  port: 8001
+
+spring:
+  # 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gmall?serverTimezone=UTC
+    username: root
+    password: 123456
+  # dubbo配置
+  dubbo:
+    application:
+      # 服务名
+      name: user-service
+    # dubbo的协议
+    protocol:
+      name: dubbo
+    registry:
+      # 服务的发现与注册地址
+      address: 192.168.161.130:2181
+      # 注册的协议
+      protocol: zookeeper
+    # dubbo服务的扫描路径
+    base-package: com.xtc.gmall
+
+
+mybatis:
+  # 扫描 mapper.xml 文件
+  mapper-locations: classpath:mapper/*.xml
+  # 扫描 bean
+  type-aliases-package: com.xtc.gmall.bean
+  # mybatis 的高级配置
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    # 日志级别
+    com.xtc.gmall.user.dao: debug
+

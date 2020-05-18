@@ -1,0 +1,26 @@
+server:
+  # 服务端口号
+  port: 8002
+
+spring:
+  # dubbo配置
+  dubbo:
+    application:
+      # 服务名
+      name: user-web
+    # dubbo的协议
+    protocol:
+      name: dubbo
+    registry:
+      # 服务的发现与注册地址
+      address: 192.168.161.130:2181
+      # 注册的协议
+      protocol: zookeeper
+    # dubbo服务的扫描路径
+    base-package: com.xtc.gmall
+    consumer:
+      # 请求超时时间
+      timeout: 600000
+      # 启动是否服务检查
+      check: false
+
