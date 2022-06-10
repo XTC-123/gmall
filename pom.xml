@@ -22,7 +22,7 @@
     <properties>
         <boot.version>2.2.6.RELEASE</boot.version>
         <mybatis.starter.version>2.1.2</mybatis.starter.version>
-        <dubbo.version>2.6.6</dubbo.version>
+        <dubbo.version>2.6.12</dubbo.version>
         <dubbo.starter.version>1.1.3</dubbo.starter.version>
         <fastjson.version>1.2.68</fastjson.version>
         <mapper.starter.version>2.1.5</mapper.starter.version>
